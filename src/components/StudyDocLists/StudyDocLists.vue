@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
     <ul>
       <li></li>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'StudyDocLists',
+  name: 'studyDocLists',
   data () {
     return {
       msg: 'Vue文档学习目录'

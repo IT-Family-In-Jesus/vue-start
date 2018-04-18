@@ -1,7 +1,7 @@
 // @flow
 import Vue from 'vue'
 import Router from 'vue-router'
-import StudyDocLists from '@/components/StudyDocLists/StudyDocLists'
+import studyDocLists from '@/components/studyDocLists/studyDocLists'
 
 Vue.use(Router)
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'StudyDocLists',
-      component: StudyDocLists
+      name: 'studyDocLists',
+      component: studyDocLists
     }
   ]
 })

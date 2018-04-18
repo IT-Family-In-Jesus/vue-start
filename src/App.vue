@@ -11,12 +11,15 @@ export default {
 </script>
 
 <style>
+
+@import "./styles/main.css";
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Ping Fang", "微软雅黑", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  min-width: 880px;
+  overflow: hidden;
 }
 </style>
