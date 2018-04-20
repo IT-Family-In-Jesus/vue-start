@@ -11,7 +11,6 @@ export default {
 </script>
 
 <style>
-
 @import "./styles/main.css";
 
 #app {

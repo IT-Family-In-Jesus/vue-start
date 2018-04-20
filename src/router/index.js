@@ -1,7 +1,7 @@
 // @flow
 import Vue from 'vue'
 import Router from 'vue-router'
-import studyDocLists from '@/components/studyDocLists/studyDocLists'
+import studyDocLists from '@/components/studyDocLists'
 
 Vue.use(Router)
 
