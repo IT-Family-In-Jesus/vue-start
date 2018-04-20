@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="nav">
-      <i-menu active-name="1">
+      <i-menu active-name="1" width="270px" theme="light">
          <i-submenu name="1">
             <template slot="title">
                 <i-icon type="ios-analytics"></i-icon>
@@ -19,7 +19,9 @@
     </i-menu>
     </div>
     <div class="center">
-
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
   </div>
 </template>
@@ -43,7 +45,6 @@ export default {
     'i-icon': Icon,
     'i-submenu': Submenu,
     'i-menu': Menu
-
   }
 }
 
