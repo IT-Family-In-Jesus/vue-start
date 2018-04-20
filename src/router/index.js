@@ -1,18 +1,29 @@
 // @flow
 import Vue from 'vue'
-import Router from 'vue-router'
-import studyDocLists from '@/components/studyDocLists'
+import VueRouter from 'vue-router'
+import Header from '@/components/header/Header'
+import StudyDocLists from '@/components/studyDocLists/StudyDocLists'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
   mode: 'history',
   linkActiveClass: 'active',
   routes: [
     {
       path: '/',
-      name: 'studyDocLists',
-      component: studyDocLists
+      component: Header,
+      children: [
+        {
+          path: '',
+          redirect: 'study-doclists'
+        },
+        {
+          path: 'study-doclists',
+          name: 'study-doclists',
+          component: StudyDocLists
+        }
+      ]
     }
   ]
 })
